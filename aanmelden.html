@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aanmelden</title>
+</head>
+
+<body>
+    <h1>Maak een account aan:</h1>
+    <form action="">
+        <label for="vnaam">Je voornaam:</label>
+        <input type="text" id="vnaam" placeholder="Voornaam" required>
+        <label for="tvoegsel">Eventuele tussenvoegsels:</label>
+        <input type="text" id="tvoegsel" placeholder="Tussenvoegsels">
+        <label for="anaam">Je achternaam:</label>
+        <input type="text" id="anaam" placeholder="Achternaam" required>
+        <label for="emailadres">Je e-mailadres:</label>
+        <input type="email" id="emailadres" placeholder="e-mailadres" required>
+        <label for="telnum">Je telefoonnummer:</label>
+        <input type="number" id="telnum" placeholder="Telefoonnummer">
+        <label for="wachtwoord">Je wachtwoord:</label>
+        <input type="password" id="wachtwoord" placeholder="wachtwoord">
+        <h2>Adresgegevens:</h2>
+        <label for="straat">Je straatnaam:</label>
+        <input type="text" id="straat" placeholder="Straatnaam">
+        <label for="nummer">Je huisnummer:</label>
+        <input type="number" id="nummer" placeholder="Huisnummer">
+        <label for="postcode">Je postcode:</label>
+        <input type="number" class="postcode" pattern="[0-9]{4}" placeholder="1234" />
+        <input type="text" class="postcode" pattern="[A-Z]{2}" placeholder="AB" />
+
+
+    </form>
+</body>
+
+</html>
