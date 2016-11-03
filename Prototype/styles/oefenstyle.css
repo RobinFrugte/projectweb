@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot');
+    src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('fonts/icomoon.woff2') format('woff2'), url('fonts/icomoon.woff') format('woff'), url('fonts/icomoon.ttf') format('truetype'), url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DFDS';
+    src: url('fonts/DFDS-Light.eot');
+    src: url('fonts/DFDS-Light.eot?#iefix') format('embedded-opentype'), url('fonts/DFDS-Light.woff2') format('woff2'), url('fonts/DFDS-Light.woff') format('woff'), url('fonts/DFDS-Light.ttf') format('truetype'), url('fonts/DFDS-Light.svg#DFDS-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DFDS-bold';
+    src: url('fonts/DFDS-Bold.eot');
+    src: url('fonts/DFDS-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/DFDS-Bold.woff2') format('woff2'), url('fonts/DFDS-Bold.woff') format('woff'), url('fonts/DFDS-Bold.ttf') format('truetype'), url('fonts/DFDS-Bold.svg#DFDS-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    font-family: "dfds";
+}
+
+body {
+    background-color: #eaedee;
+}
+
+article {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+article.detail > p {
+    width: 50%;
+    background-color: white;
+    padding: 2em;
+    column-count: 2;
+    column-gap: 5em;
+}
+
+header {
+    background-color: white;
+    flex: 1 100%;
+}
+
+header > img {
+    width: 30%;
+    min-width: 125px;
+    max-width: 250px;
+}

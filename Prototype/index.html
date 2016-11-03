@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Verhalen pagina</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="overlay">
+        <div class="melding">
+            <p>Het verhaal is opgeslagen.</p>
+            <button id="close">OK</button>
+        </div>
+    </div>
+    <header>
+        <img src='styles/images/dfdslogo.jpg' alt="Logo">
+        <div class="mobileIcons">
+            <a href="login.html"><img class="login" src="styles/images/login.png" alt="Login"></a>
+            <div class="filterenDropdown">
+                <img class="filter" src="styles/images/filter.png" alt="filter">
+                <div class="zoekenContent">
+                    <input type="search" name="Zoeken" placeholder="Zoek..." class="zoeken">
+                </div>
+            </div>
+        </div>
+        <aside>
+            <a href="login.html"><img class="login" src="styles/images/login.png" alt="Login"></a>
+            <div class="right">
+                <input type="search" name="Zoeken" placeholder="Zoek..." class="zoeken">
+                <div class="sorterenDropdown">
+                    <button>Sorteren</button>
+                    <div class="sorterenContent">
+                        <a href="# ">Nieuw -> Oud</a>
+                        <a href="# ">Ouds -> Nieuw</a>
+                        <a href="# ">Meest gelezen</a>
+                        <a href="# ">Meest besproken</a>
+                    </div>
+                </div>
+                <div class="filterenDropdown">
+                    <button>Filteren</button>
+                    <div class="filterenContent">
+                        <label>
+                            <input type="checkbox">Met comments</label>
+
+                        <label>
+                            <input type="checkbox">Van vandaag</label>
+
+                        <label>
+                            <input type="checkbox">Oudere verhalen</label>
+
+                        <label>
+                            <input type="checkbox">Jongeren</label>
+
+                        <label>
+                            <input type="checkbox" id="volwassenen">Volwassenen</label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </header>
+    <!--Verborgen menuopties voor kleiner scherm-->
+    <section class="filtersorteren">
+        <div class="zoekSorterenDropdown">
+            <button class="sorteren">Filteren</button>
+            <div class="filterenContent">
+                <label>
+                    <input type="checkbox">Met comments</label>
+
+                <label>
+                    <input type="checkbox">Van vandaag</label>
+
+                <label>
+                    <input type="checkbox">Oudere verhalen</label>
+
+                <label>
+                    <input type="checkbox">Jongeren</label>
+
+                <label>
+                    <input type="checkbox" id="volwassenen">Volwassenen</label>
+            </div>
+        </div>
+        <div class="filterSorterenDropdown">
+            <button class="sorteren">Sorteren</button>
+            <div class="sorterenContent">
+                <a href="#">Nieuw -> Oud</a>
+                <a href="#">Ouds -> Nieuw</a>
+                <a href="#">Meest gelezen</a>
+                <a href="#">Meest besproken</a>
+            </div>
+        </div>
+    </section>
+    <!--Zijbalk met filter en verhaal van de dag-->
+
+    <!--Vlak met verhalen-->
+    <section class="overzicht ">
+
+        <article class="vvdd">
+            <h2>Verhaal van de dag</h2>
+            <div class="vvddImage"><img id="save1" src="styles/images/save.png" alt=""></div>
+            <div class="vvddText">
+                <div class="vvddEdge">
+                    <button class="scheef2">Lees</button>
+                </div>
+                <h3>Verrassing</h3>
+                <p class="smaller"> - ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’ – ‘Gaat daar een bus naartoe?’ – ‘De bus stopt op het stationsplein.’ – ‘Ah. En vandaar moet je lopen?’ – ‘Ja, ik was met mijn zoon. Die sliep in zijn kinderwagen.’ – ‘Goed zo. Lekker wandelweer?’[…] </p>
+
+                <footer class="noMargin">
+                    <p>950 woorden Door: Molovich</p>
+                </footer>
+                <button class="scheef3">Lees</button>
+            </div>
+        </article>
+        <!--4 individuele verhalen-->
+        <div class="articles">
+            <div class="b1">
+                <article>
+                    <h2>Freudiaans</h2>
+                    <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek van Amsterdam, om Stijloefeningen te lenen, een boek waarin […]</p>
+                    <footer>
+                        <p>580 woorden Door: Molovich</p>
+                    </footer>
+                    <a href="freudiaans.html" class="scheef">Lees</a>
+                    <img id="save" src="styles/images/save.png" alt="">
+                </article>
+            </div>
+            <div class="b2">
+                <article>
+                    <h2>Kinderboek</h2>
+                    <p>Kijk, daar gaat Max. Dag Max! Hij stapt uit de bus. Wat duwt hij daar vooruit? Jawel, een heuse kinderwagen! En wat voor één! Een groene! Zijn zoontje ligt er in te slapen. Die heeft gelukkig geen last van de kou. Want het is koud joh! Het regent een beetje en het waait flink. Alle […]</p>
+                    <footer>
+                        <p>811 woorden Door: Molovich</p>
+                    </footer>
+                    <a href="kinderboek.html" class="scheef">Lees</a>
+                    <img id="save" src="styles/images/save.png" alt="">
+                </article>
+            </div>
+            <div class="b3">
+                <article>
+                    <h2>Haiku</h2>
+                    <p>Op zoek naar een boek Een vrouw vraagt de weg en ik Koop babyschoentjes Op zoek naar een boek Een vrouw vraagt de weg en ik Koop babyschoentjes Op zoek naar een boek Een vrouw vraagt de weg en ik Koop babyschoentjes Op zoek naar een boek Een vrouw vraagt de weg en ik Koop babyschoentjes</p>
+                    <footer>
+                        <p>14 woorden Door: Molovich</p>
+                    </footer>
+                    <a href="haiku.html" class="scheef ">Lees</a>
+                    <img id="save" src="styles/images/save.png" alt="">
+                </article>
+            </div>
+            <div class="b4">
+                <article>
+                    <h2>Mop</h2>
+                    <p>Ken je die mop van die man die met bus 21 naar het Centraal Station van Amsterdam ging, langs de diverse bouwputten liep richting de Openbare Bibliotheek om daar Stijloefeningen van Raymond Queneau te kunnen lenen, een boek waar hij al weken naar op zoek was, maar dat hij voor binnenkomst tegengehouden werd door een […] </p>
+                    <footer>
+                        <p>735 woorden Door: Molovich</p>
+                    </footer>
+                    <a href="" class="scheef ">Lees</a>
+                    <img id="save" src="styles/images/save.png" alt="">
+                </article>
+            </div>
+        </div>
+
+    </section>
+    <footer class="bodyFooter">
+        <div></div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1661 @@
+/*Webfont*/
+
+@font-face {
+    font-family: 'DFDS';
+    src: url('fonts/DFDS-Light.eot');
+    src: url('fonts/DFDS-Light.eot?#iefix') format('embedded-opentype'), url('fonts/DFDS-Light.woff2') format('woff2'), url('fonts/DFDS-Light.woff') format('woff'), url('fonts/DFDS-Light.ttf') format('truetype'), url('fonts/DFDS-Light.svg#DFDS-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DFDS-bold';
+    src: url('fonts/DFDS-Bold.eot');
+    src: url('fonts/DFDS-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/DFDS-Bold.woff2') format('woff2'), url('fonts/DFDS-Bold.woff') format('woff'), url('fonts/DFDS-Bold.ttf') format('truetype'), url('fonts/DFDS-Bold.svg#DFDS-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot');
+    src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('fonts/icomoon.woff2') format('woff2'), url('fonts/icomoon.woff') format('woff'), url('fonts/icomoon.ttf') format('truetype'), url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Algemeen*/
+
+* {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'DFDS', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'DFDS', sans-serif;
+    background-color: #eaedee;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#save {
+    max-width: 2em;
+    margin-left: 12em;
+}
+
+#save1 {
+    max-width: 4em;
+    margin-top: 17em;
+    margin-right: 1em;
+    float: right;
+}
+
+div#overlay {
+    display: block;
+    z-index: 3;
+    align-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    height: 100%;
+}
+
+div.melding {
+    padding: .5em;
+    z-index: 5em;
+    align-content: center;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    left: 40%;
+    width: 20%;
+    min-width: 20em;
+}
+
+div.melding > p {
+    position: relative;
+    width: 12em;
+    left: 25%;
+    opacity: 1;
+}
+
+div.melding > button {
+    position: relative;
+    opacity: 1;
+    left: 25%;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.875;
+}
+
+fieldset {
+    border: none;
+}
+
+header {
+    background-color: white;
+    flex: 1 100%;
+}
+
+header > img {
+    width: 30%;
+    min-width: 125px;
+    max-width: 250px;
+}
+
+header img.login {
+    float: left;
+    max-width: 50px;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+div.right {
+    float: right;
+}
+
+div.mobileIcons {
+    display: none;
+}
+
+header > h1 {
+    padding: .75em;
+}
+
+header > nav {
+    flex-basis: 50%;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+header nav li {
+    padding: 1em;
+    text-decoration: none;
+    font-family: 'DFDS', sans-serif;
+}
+
+header > img {
+    padding: 1em;
+    max-width: 200px;
+}
+
+aside {
+    max-width: 40%;
+    background-color: white;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-height: 5.5em;
+    float: right;
+}
+
+section.overzicht {
+    padding-left: 3em;
+    display: flex;
+    width: 100%;
+    margin-left: 0em;
+}
+
+h1 {
+    font-size: 2.1875em;
+}
+
+h2 {
+    flex-direction: column;
+}
+
+article.detail {
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+    line-height: 1.75em;
+}
+
+article > p {
+    position: relative;
+    padding-left: .3em;
+    padding-right: .3em;
+    width: 17em;
+    min-width: 50%;
+    background: -webkit-linear-gradient(top, white 60%, #CCCCCC 160%);
+}
+
+p {
+    max-height: 7em;
+    overflow: hidden;
+}
+
+p.smaller {
+    width: 100%;
+    max-height: 4.5em;
+}
+
+article.overzicht p {
+    font-size: 1em;
+}
+
+article.detail > p {
+    column-count: 2;
+    column-gap: 3em;
+}
+
+article.vvdd {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-image: url(images/verrassing.jpg);
+    background-size: cover;
+}
+
+article.vvdd h2 {
+    -webkit-clip-path: polygon(0 0, 100% 0, 87% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+    background-color: #f6861f;
+    opacity: 1;
+    color: white;
+    width: 37.5%;
+    margin: 0;
+    padding-left: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em
+}
+
+div.articles {
+    display: flex;
+    flex-wrap: wrap;
+    height: 43em;
+    margin-top: 1em;
+}
+
+div.articles article {
+    transition: All 1s ease;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    min-width: 20em;
+    flex-basis: 90%;
+    -webkit-clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
+    margin-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: white;
+}
+
+div.articles article:hover {
+    flex-basis: 75%;
+}
+
+div.vvddImage {
+    height: 22.2em;
+}
+
+div.vvddText {
+    transition: All 1s ease;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    background-color: white;
+    height: 16.5em;
+    overflow: hidden;
+}
+
+div.vvddText h3 {
+    margin-left: 1em;
+    padding-left: .3em;
+    font-size: 1.4em;
+}
+
+div.vvddText > p {
+    background: -webkit-linear-gradient(top, white 60%, #CCCCCC 160%);
+    max-height: 7em;
+    max-width: 25em;
+    padding-left: .1em;
+    margin-left: 1em;
+}
+
+div.vvddText button {
+    transition: All 1s ease;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    -webkit-clip-path: polygon(16% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(16% 0, 100% 0, 100% 100%, 0% 100%);
+    text-align: center;
+}
+
+div.vvddText footer {
+    color: black;
+    padding-left: 1em;
+    width: 50%;
+}
+
+div.vvddEdge {
+    transition: All 1s ease;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    position: relative;
+    float: right;
+    z-index: 2;
+    height: 16.5em;
+    width: 16.5em;
+    padding: 1em;
+    -webkit-clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: #f6861f;
+}
+
+div.vvddText:hover div.vvddEdge {
+    transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(135px);
+    -moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+    overflow: hidden;
+    background-color: white;
+}
+
+div.vvddText:hover div.vvddEdge > button {
+    opacity: 1;
+    color: white;
+    transition-delay: .75s;
+}
+
+div.b1 {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(images/Freudiaans%20overzicht%20background.png);
+    background-size: cover;
+}
+
+div.b2 {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(images/Kinderboek%20overzicht%20background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+div.b3 {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(images/Haiku%20mobiel.png);
+    background-size: cover;
+}
+
+div.b4 {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(images/freudiaansbackground.jpg);
+    background-size: cover;
+}
+
+div > footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    list-style-type: none;
+    color: white;
+}
+
+div > footer p {
+    padding: 0;
+}
+
+div.articles article {
+    flex-basis: 80%;
+}
+
+article > p {
+    width: 16em;
+    min-width: 50%;
+}
+
+div.articles {
+    width: 80%;
+}
+
+div.b1,
+div.b2,
+div.b3,
+div.b4 {
+    min-width: 20em;
+}
+
+article.vvdd {
+    width: 10%;
+}
+
+div.vvddText > p {
+    max-height: 7em;
+    max-width: 19.6em;
+    padding-left: 1em;
+}
+
+article.vvdd > h2 {
+    width: 50%;
+}
+
+footer ul {
+    margin: 0;
+    font-size: .8em
+}
+
+footer a {
+    color: white;
+}
+
+footer > div {
+    margin: .5em;
+    margin-left: .3em;
+    font-family: "icomoon";
+    font-size: 4em;
+}
+
+footer.bodyFooter {
+    margin-bottom: 0;
+    margin-top: 2.35em;
+    width: 100%;
+    height: 8em;
+    background-color: #003251;
+    color: white;
+}
+
+footer.bodyFooter > div {
+    align-self: center;
+    margin-left: 14em;
+}
+
+article > footer {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+article > footer.noMargin {
+    margin-top: 0;
+}
+
+button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 12em;
+    font-family: 'DFDS';
+    font-size: 1em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+
+a.scheef {
+    transition: All 1s ease;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    /*CLIP-PATH*/
+    -webkit-clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
+    /*CLIP-PATH*/
+    width: 10em;
+    color: white;
+    height: 2em;
+    background: #f6861f;
+    text-align: left;
+    padding: .3em;
+    padding-left: 2em;
+    padding-right: 2.5em;
+    font-weight: 500;
+    transition: scale(1);
+}
+
+button.scheef2 {
+    transition: All 1s ease;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    /*CLIP-PATH*/
+    -webkit-clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
+    /*CLIP-PATH*/
+    width: 7em;
+    color: white;
+    height: 2em;
+    background-color: #f6861f;
+    text-align: left;
+    padding: .3em;
+    padding-left: 1em;
+    font-weight: 500;
+    transition: scale(1);
+}
+
+a.scheef:hover {
+    transform: rotate(0deg) scale(1.1) skew(1deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.1) skew(1deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.1) skew(1deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.1) skew(1deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.1) skew(1deg) translate(0px);
+    background-color: #003251;
+    -webkit-clip-path: polygon(0 0, 100% 0, 84% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+}
+
+button.scheef > a {
+    transition: All 1s ease;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    color: white;
+    font-size: 1.25em;
+}
+
+button.scheef2:hover {
+    transition: none;
+    background: #f6861f;
+}
+
+button.sorteren {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-family: 'DFDS';
+    font-size: 1em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+
+.sorteren:focus .sorterenContent {
+    display: block;
+}
+
+.filterSorterenDropdown {
+    background-color: white;
+    float: left;
+    width: 50%;
+    text-align: center;
+    display: none;
+}
+
+.zoekSorterenDropdown {
+    background-color: white;
+    float: left;
+    width: 50%;
+    text-align: center;
+    display: none;
+}
+
+.filterenDropdown {
+    width: 49.5%;
+    float: left;
+    margin-top: .5em;
+    background-color: white;
+}
+
+.sorterenDropdown {
+    width: 49.5%;
+    float: right;
+    margin-top: .5em;
+    background-color: white;
+}
+
+.filterenDropdown > button {
+    margin-left: 2.5em;
+}
+
+.sorterenDropdown > button {
+    margin-left: 2.5em;
+}
+
+.sorterenContent {
+    margin-right: 2em;
+    right: 0;
+    z-index: 2;
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    text-decoration: none;
+    width: 15.7%;
+    font-family: 'DFDS';
+}
+
+.zoekenContent {
+    margin-right: 2em;
+    z-index: 2;
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    text-decoration: none;
+    width: 50%;
+    font-family: 'DFDS';
+}
+
+.filterenContent {
+    z-index: 1;
+    display: none;
+    position: fixed;
+    background-color: white;
+    border: 1px solid black;
+    text-decoration: none;
+    width: 15.7%;
+    font-family: 'DFDS';
+}
+
+.sorterenContent a {
+    display: block;
+    color: black;
+    width: 100%;
+    text-decoration: none;
+    padding: 1em;
+    border-top: 1px solid black;
+}
+
+.zoekenContent input {
+    background-color: white;
+    display: block;
+    color: black;
+    width: 100%;
+    padding: 1em;
+}
+
+.sorterenContent a:first-of-type {
+    border-top: 0px solid black;
+}
+
+.filterenContent a {
+    display: block;
+    color: black;
+    width: 100%;
+    text-decoration: none;
+    margin-top: 1em;
+    border-top: 1px solid black;
+}
+
+.filterSorterenDropdown:hover .sorterenContent {
+    display: block;
+}
+
+.zoekSorterenDropdown:hover .filterenContent {
+    display: block;
+}
+
+.sorterenDropdown:hover .sorterenContent {
+    display: block;
+}
+
+.filterenDropdown:hover .filterenContent {
+    display: block;
+}
+
+.sorterenDropdown:hover {
+    border: 1px solid black;
+}
+
+.filterenDropdown:hover {
+    border: 1px solid black;
+}
+
+.sorterenContent a:hover {
+    background-color: #f6861f;
+    color: white;
+}
+
+.filterenDropdown:hover .sorterenContent {
+    display: block;
+}
+
+.filterenContent label:hover {
+    background-color: #f6861f;
+    color: white;
+}
+
+.filterenContent label {
+    float: left;
+    display: block;
+    color: black;
+    width: 100%;
+    text-decoration: none;
+    padding: 1em;
+    border-top: 1px solid black;
+}
+
+.filterenContent label:first-of-type {
+    border-top: 0px solid black;
+}
+
+.filterenContent label input {
+    margin-right: 2em;
+    text-decoration: none;
+}
+
+.filterenContent label:checked {
+    background-color: #f6861f;
+    color: white;
+}
+
+.zoeken {
+    width: 100%;
+    border: none;
+    padding: .5em;
+    margin-top: .5em;
+    background-color: #eaedee;
+}
+
+.zoeken:hover {
+    border: solid black 1px;
+}
+
+input::-webkit-input-placeholder {
+    color: black;
+    font-family: 'dfds';
+    font-weight: 500;
+    font-size: 1.3em;
+    opacity: 0.5;
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: black;
+    font-family: 'dfds';
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: black;
+    font-family: 'dfds';
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+input:-ms-input-placeholder {
+    color: black;
+    font-family: 'dfds';
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.filtersorteren {
+    display: none;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+div.vvddEdge button:hover {
+    transition: none;
+    -webkit-clip-path: polygon(16% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(16% 0, 100% 0, 100% 100%, 0% 100%);
+    color: #f6861f;
+}
+
+
+/*Freudiaans*/
+
+img.freudiaansTablet {
+    display: none;
+}
+
+img.freudiaansMobiel {
+    display: none;
+}
+
+div.room {
+    width: 2.5%;
+}
+
+@media screen and (max-width: 80em) {
+    img.freudiaansDesktop {
+        display: none;
+    }
+    img.freudiaansTablet {
+        display: none;
+    }
+    img.freudiaansMobiel {
+        display: block;
+        border-top: 1px solid black;
+        width: 100%;
+        height: 250em;
+    }
+}
+
+@media screen and (min-width: 80.111em) and (max-width: 100em) {
+    img.freudiaansDesktop {
+        display: none;
+    }
+    img.freudiaansMobiel {
+        display: none;
+    }
+    img.freudiaansTablet {
+        display: block;
+        border-top: 1px solid black;
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 100.111em) {
+    img.freudiaansDesktop {
+        display: block;
+        border-top: 1px solid black;
+        width: 95%;
+    }
+    img.freudiaansTablet {
+        display: none;
+    }
+    img.freudiaansMobiel {
+        display: none;
+    }
+}
+
+
+/*Kinderboek*/
+
+img.kinderboekDesktop {
+    border-top: 1px solid black;
+    width: 95%;
+}
+
+img.kinderboekTablet {
+    display: none;
+}
+
+img.kinderboekMobiel {
+    display: none;
+}
+
+@media screen and (max-width: 80em) {
+    img.kinderboekDesktop {
+        display: none;
+    }
+    img.kinderboekTablet {
+        display: none;
+    }
+    img.kinderboekMobiel {
+        display: block;
+        border-top: 1px solid black;
+        width: 100%;
+        height: 250em;
+    }
+}
+
+@media screen and (min-width: 80.111em) and (max-width: 100em) {
+    img.kinderboekDesktop {
+        display: none;
+    }
+    img.kinderboekMobiel {
+        display: none;
+    }
+    img.kinderboekTablet {
+        display: block;
+        border-top: 1px solid black;
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 100.111em) {
+    img.kinderboekDesktop {
+        display: block;
+        border-top: 1px solid black;
+        width: 95%;
+    }
+    img.kinderboekTablet {
+        display: none;
+    }
+    img.kinderboekMobiel {
+        display: none;
+    }
+}
+
+
+/*Haiku*/
+
+img.haikuDesktop {
+    border-top: 1px solid black;
+    width: 95%;
+}
+
+img.haikuTablet {
+    display: none;
+}
+
+img.haikuMobiel {
+    display: none;
+}
+
+@media screen and (max-width: 80em) {
+    img.haikuDesktop {
+        display: none;
+    }
+    img.haikuTablet {
+        display: none;
+    }
+    img.haikuMobiel {
+        display: block;
+        border-top: 1px solid black;
+        width: 100%;
+        height: 250em;
+    }
+}
+
+@media screen and (min-width: 80.111em) and (max-width: 100em) {
+    img.haikuDesktop {
+        display: none;
+    }
+    img.haikuMobiel {
+        display: none;
+    }
+    img.haikuTablet {
+        display: block;
+        border-top: 1px solid black;
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 100.111em) {
+    img.haikuDesktop {
+        display: block;
+        border-top: 1px solid black;
+        width: 95%;
+    }
+    img.haikuTablet {
+        display: none;
+    }
+    img.haikuMobiel {
+        display: none;
+    }
+}
+
+
+/*Responsive*/
+
+@media all and (min-width: 100.062em) and (max-width: 115.125em) {
+    aside {
+        min-width: 42em;
+    }
+    header img.login {
+        float: left;
+        max-width: 50px;
+        margin-top: 1em;
+        margin-right: 1em;
+    }
+    div.right {
+        float: right;
+    }
+    .filterenDropdown {
+        width: 50%;
+        float: left;
+        margin-top: .5em;
+        background-color: white;
+    }
+    .sorterenDropdown {
+        width: 50%;
+        float: right;
+        margin-top: .5em;
+        background-color: white;
+    }
+    .filterenDropdown > button {
+        margin-left: 1em;
+    }
+    .sorterenDropdown > button {
+        margin-left: 1em;
+    }
+    .sorterenContent {
+        margin-right: 2em;
+        right: 0;
+        z-index: 2;
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: solid black 1px;
+        text-decoration: none;
+        width: 14%;
+        font-family: 'DFDS';
+    }
+    .filterenContent {
+        z-index: 2;
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid black;
+        text-decoration: none;
+        width: 14%;
+        font-family: 'DFDS';
+    }
+    div.room {
+        width: 1%;
+    }
+}
+
+@media all and (min-width: 90em) and (max-width: 100.061em) {
+    .filterenDropdown {
+        width: 10%;
+        float: left;
+        margin-top: .5em;
+        background-color: white;
+    }
+    .sorterenDropdown {
+        width: 40%;
+        float: right;
+        margin-top: .5em;
+        background-color: white;
+    }
+    .filterenDropdown > button {
+        margin-left: 1em;
+        width: 20%;
+    }
+    .sorterenDropdown > button {
+        margin-left: 2em;
+        width: 20%;
+    }
+    .sorterenContent {
+        margin-right: 2em;
+        right: 0;
+        z-index: 2;
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: solid black 1px;
+        text-decoration: none;
+        width: 11.5%;
+        font-family: 'DFDS';
+    }
+    .filterenContent {
+        z-index: 2;
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid black;
+        text-decoration: none;
+        width: 11.5%;
+        font-family: 'DFDS';
+    }
+    section.overzicht {
+        padding-left: 1em;
+        width: 100%;
+    }
+    div.articles {
+        display: flex;
+        flex-wrap: wrap;
+        height: 43em;
+        margin-top: 1em;
+    }
+    div.articles article {
+        position: flex;
+        flex-basis: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    div.b1,
+    div.b2,
+    div.b3,
+    div.b4 {
+        min-width: 20em;
+    }
+    article.vvdd {
+        width: 30%;
+    }
+    div {
+        display: block;
+    }
+    .filterSorterenDropdown {
+        display: block;
+    }
+    .zoekSorterenDropdown {
+        display: block;
+    }
+    .filterenDropdown {
+        width: 50%;
+        float: left;
+        margin-top: .5em;
+        background-color: white;
+    }
+    .sorterenDropdown {
+        width: 50%;
+        float: right;
+        margin-top: .5em;
+        background-color: white;
+    }
+    button.sorteren {
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        width: 30%;
+        font-family: 'DFDS';
+        font-size: 1em;
+        padding-bottom: .5em;
+        padding-top: .5em;
+    }
+    aside > .zoeken {
+        display: ;
+    }
+    div.footer {
+        display: block;
+    }
+    article.vvdd {
+        min-width: 35em;
+    }
+    div.vvddText > p {
+        max-height: 7em;
+        max-width: 18em;
+        padding-left: 1em;
+    }
+    article.vvdd > h2 {
+        width: 45%;
+    }
+    article > p {
+        width: 14.5em;
+        min-width: 50%;
+    }
+    footer.bodyFooter > div {
+        align-self: center;
+        margin-left: 11em;
+    }
+    img.freudiaansDesktop {
+        border-top: 1px solid black;
+        width: 100%;
+    }
+    img.kinderboekDesktop {
+        border-top: 1px solid black;
+        width: 100%;
+    }
+    img.haikuDesktop {
+        border-top: 1px solid black;
+        width: 100%;
+    }
+    div.room {
+        width: 0%;
+    }
+}
+
+@media all and (min-width: 60.111em) and (max-width: 89.9999em) {
+    div.room {
+        width: 2.5%;
+    }
+    aside {
+        min-width: 32em;
+    }
+    header img.login {
+        float: left;
+        max-width: 50px;
+        margin-top: 1em;
+        margin-right: 1em;
+    }
+    div.right {
+        width: 25em;
+        float: right;
+    }
+    .filterenDropdown {
+        width: 50%;
+        float: left;
+        margin-top: .5em;
+        background-color: white;
+    }
+    .sorterenDropdown {
+        width: 50%;
+        float: right;
+        margin-top: .5em;
+        background-color: white;
+    }
+    .filterenDropdown > button {
+        margin-left: 4em;
+        width: 20%;
+    }
+    .sorterenDropdown > button {
+        margin-left: 4em;
+        width: 20%;
+    }
+    .sorterenContent {
+        margin-right: 2em;
+        right: 0;
+        z-index: 2;
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: solid black 1px;
+        text-decoration: none;
+        font-family: 'DFDS';
+    }
+    .filterenContent {
+        margin-right: 14.5em;
+        right: 0;
+        z-index: 2;
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid black;
+        text-decoration: none;
+        width: 14%;
+        font-family: 'DFDS';
+    }
+    .bodyFooter {
+        display: none;
+    }
+    .sorterenContent {
+        width: 21%;
+    }
+    article.vvdd > h2 {
+        width: 50%;
+    }
+    section.overzicht {
+        padding-left: 1em;
+        width: 100%;
+        min-width: 33em;
+    }
+    div.articles article {
+        position: flex;
+        flex-basis: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    article.vvdd {
+        min-width: 30em;
+    }
+    article p {
+        width: 16em;
+        min-width: 45%;
+    }
+    div.b1,
+    div.b2,
+    div.b3,
+    div.b4 {
+        width: 100%;
+    }
+    .sorterenDropdown {
+        display: block;
+    }
+    .filterSorterenDropdown {
+        display: block;
+        padding: .5em;
+    }
+    .zoekSorterenDropdown {
+        display: block;
+        padding: .5em;
+    }
+    aside > .zoeken {
+        display: block;
+    }
+    div.footer {
+        display: none;
+    }
+    div.vvddText > p {
+        max-height: 7em;
+        max-width: 1em;
+        padding-left: 1em;
+    }
+    article.vvdd {
+        height: 34.9em
+    }
+    div.vvddImage {
+        height: 15em;
+    }
+    div.vvddEdge {
+        width: 14em;
+    }
+    div.vvddText:hover div.vvddEdge {
+        transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+        -webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(95px);
+        -moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+        -o-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+        -ms-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+        overflow: hidden;
+        background-color: white;
+    }
+    div#overlay {
+        z-index: 3;
+        align-content: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        height: 95em;
+    }
+}
+
+@media all and (max-width: 61em) {
+    #save {
+        margin-left: 17em;
+        float: right;
+    }
+    a.scheef {
+        margin-rop: 2em;
+    }
+    .sorterenContent {
+        margin-right: 0;
+    }
+    header > img {
+        min-width: 180px
+    }
+    img.filter {
+        margin-top: .5em;
+        max-width: 50px;
+    }
+    div.mobileIcons {
+        margin-right: 1em;
+        display: flex;
+        float: right;
+    }
+    body {
+        min-width: 20em;
+        flex-direction: column;
+    }
+    .bodyFooter {
+        display: none;
+    }
+    .sorterenContent {
+        width: 47.3%;
+    }
+    header {
+        height: 5em;
+    }
+    section.overzicht {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 1em;
+        padding-left: 1.5em;
+        align-self: center;
+        width: 100%;
+    }
+    div.articles article {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    div.articles article:hover {
+        flex-basis: 100%;
+    }
+    div.articles {
+        padding-right: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    div.b1,
+    div.b2,
+    div.b3,
+    div.b4 {
+        margin-top: 1em;
+        width: 100%;
+        min-width: 20em;
+    }
+    .filterSorterenDropdown {
+        display: block;
+        padding: .5em;
+    }
+    .zoekSorterenDropdown {
+        display: block;
+        padding: .5em;
+    }
+    .sorterencontent {
+        margin-right: 0;
+    }
+    .filterenContent {
+        margin-left: 0;
+        z-index: 2;
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid black;
+        text-decoration: none;
+        width: 50%;
+        font-family: 'DFDS';
+    }
+    .zoekenContent {
+        margin-right: .5em;
+        right: 0;
+    }
+    .filterenDropdown:hover .zoekenContent {
+        display: block;
+    }
+    aside {
+        display: none;
+    }
+    .filtersorteren {
+        display: block;
+        margin-top: .75em;
+    }
+    div.footer {
+        display: none;
+    }
+    article p {
+        width: 17em;
+        min-width: 100%;
+    }
+    article.vvdd {
+        width: 100%;
+        margin-right: 1em;
+    }
+    div.vvddText {
+        padding-right: 1em;
+    }
+    div.vvddText button {
+        align-content: flex-end;
+        position: inherit;
+        opacity: 1;
+        float: right;
+    }
+    div.vvddText > p {
+        max-height: 6em;
+        width: 100%;
+        padding-left: 1em;
+        margin-left: 1em;
+    }
+    div.vvddEdge {
+        display: none;
+    }
+    article.vvdd > h2 {
+        min-width: 10em;
+        width: 75%;
+        margin-right: 2em;
+    }
+    div.vvddText > footer {
+        max-height: 7em;
+        max-width: 1em;
+        padding-left: 1em;
+    }
+    div.vvddImage {
+        height: 10em;
+    }
+    .noMargin {
+        width: 50%;
+    }
+    button.scheef3 {
+        /*CLIP-PATH*/
+        -webkit-clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
+        /*CLIP-PATH*/
+        width: 7em;
+        color: white;
+        height: 2em;
+        background-color: #f6861f;
+        text-align: left;
+        padding: .3em;
+        padding-left: 1em;
+        font-weight: 500;
+        margin-bottom: 2em;
+    }
+    div.room {
+        width: 0%;
+    }
+}
+
+
+/* Aanmeld pagina */
+
+body.aanmelden {
+    min-width: 20em;
+    flex-direction: column;
+}
+
+div.achtergrondAanmelden {
+    margin-top: 8em;
+    background-image: url(images/dikkebootjonge.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 50em;
+    z-index: 0;
+    position: absolute;
+    opacity: .75;
+}
+
+form.aanmeld {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    width: 25%;
+    min-width: 20em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    margin-top: 3.5em;
+    align-self: center;
+    background-color: white;
+}
+
+form.aanmeld > fieldset {
+    border: none;
+    display: flex;
+}
+
+form.aanmeld input {
+    width: 100%;
+    list-style-type: none;
+}
+
+form.aanmeld legend {
+    font-size: 1.5em;
+}
+
+label {
+    font-size: 1.1em;
+    padding-top: .3em;
+    float: left;
+}
+
+fieldset button {
+    margin-top: 2em;
+    color: white;
+    font-size: 1.25em;
+    margin-bottom: .3em;
+}
+
+fieldset input {
+    padding-left: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-top: .5em;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: .3em;
+}
+
+fieldset input:empty {
+    background-color: white;
+}
+
+fieldset input.postcode {
+    width: 1em;
+}
+
+fieldset input:focus {
+    border: black 2px solid;
+}
+
+fieldset input:focus::-webkit-input-placeholder,
+input:focus:-moz-placeholder {
+    display: none;
+}
+
+fieldset.persGegevens input:valid {
+    background-color: #B7F6C3;
+}
+
+fieldset.persGegevens input:invalid {
+    background-color: #FAC6C1;
+}
+
+fieldset input:placeholder-shown {
+    background-color: white;
+}
+
+header.aanmelden {
+    z-index: 1;
+    height: 6em;
+}
+
+header.aanmelden a {
+    padding: 1em;
+    margin-top: 1em;
+}
+
+
+/* Inlogpagina */
+
+body.inloggen {
+    min-width: 20em;
+    flex-direction: column;
+}
+
+body.inloggen a {
+    font-size: .9em;
+    padding-bottom: 1em;
+    margin-left: 1em;
+}
+
+body.inloggen a:hover {
+    font-weight: 500;
+}
+
+div.inloggen {
+    width: 100%;
+}
+
+form.inloggen {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    width: 25%;
+    min-width: 20em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 10em;
+    align-self: center;
+    background-color: white;
+}
+
+form.inloggen > fieldset {
+    border: none;
+    display: flex;
+}
+
+form.inloggen input {
+    width: 100%;
+    list-style-type: none;
+}
+
+form.inloggen legend {
+    font-size: 1.5em;
+}
+
+fieldset input:valid {
+    background-color: white;
+}
+
+fieldset input:empty {
+    background-color: white;
+}
+
+fieldset input:invalid {
+    background-color: white;
+}
+
+fieldset.persGegevens input:placeholder-shown {
+    background-color: white;
+}

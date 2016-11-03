@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aanmelden</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="aanmelden">
+    <header class="aanmelden">
+        <img src="styles/images/dfdslogo.jpg" alt="Logo">
+
+    </header>
+    <div class="achtergrondAanmelden"></div>
+    <form action="login.html" class="aanmeld">
+        <fieldset class="persGegevens">
+            <legend>Vul je gegevens in:</legend>
+            <label for="vnaam">Je voornaam:</label>
+            <input type="text" id="vnaam" placeholder="Voornaam" required>
+            <label for="anaam">Je achternaam:</label>
+            <input type="text" id="anaam" placeholder="Achternaam" required>
+            <label for="emailadres">Je e-mailadres:</label>
+            <input type="email" id="emailadres" placeholder="e-mailadres" required>
+            <label for="wachtwoord">Je wachtwoord (min. 6 characters):</label>
+            <input type="password" id="wachtwoord" placeholder="Wachtwoord" required pattern=".{6,25}">
+            <button class="scheef2">Verzenden</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
